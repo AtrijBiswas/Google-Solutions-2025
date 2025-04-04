@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Set explicit height for canvas before rendering
     document.getElementById("dailyProgressChart").height = 300;
     document.getElementById("weeklyProgressChart").height = 300;
 
