@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h1 class="title">Dashboard</h1>
+            <nav>
+                <ul>
+                    <li onclick="setActiveTab('Analytics')">Analytics</li>
+                    <li onclick="setActiveTab('Attendance')">Attendance</li>
+                    <li onclick="setActiveTab('Assignments')">Assignments</li>
+                    <li onclick="setActiveTab('Report')">Report</li>
+                    <li onclick="setActiveTab('Doubt')">Doubt</li>
+                </ul>
+            </nav>
+            <button class="sign-out" onclick="signOut()">Sign Out</button>
+        </div>
+         <!-- Main Content -->
+         <div class="main-content">
+            <h2 id="activeTabTitle">Analytics</h2>      
+            <!-- Dashboard Widgets -->
+            <div class="dashboard-widgets">
+                <div class="widget">Total Chapters Completed: <br> <strong style="color: #38294d;">10 / 22</strong></div>
+                <div class="widget">Total Chapters Left: <br> <strong style="color: #38294d;">12 / 22</strong></div>
+                <div class="widget">Total Credits Collected: <br> <strong style="color: #38294d;">40</strong></div>
+                <div class="widget">Attendance: <br> <strong style="color: #38294d;">89% (223 / 250 days)</strong></div>
+            </div>
+            <!-- Study Progress Chart -->
+            <div class="study-progress">
+                <h3 style="color: #38294d;">Study Progress</h3>
+                <div class="charts-container">
+                    <canvas id="dailyProgressChart"></canvas>
+                    <canvas id="weeklyProgressChart"></canvas>
+                </div>
+            </div>    
+            <!-- Strengths & Weaknesses -->
+            <div class="strength-weakness">
+                <div class="strength">
+                    <h3 style="color: #38294d;">Strengths</h3>
+                    <ul>
+                        <li>Optics</li>
+                        <li>Semiconductors</li>
+                        <li>Electrostatics</li>
+                        <li>Modern Physics</li>
+                        <li>Current Electricity</li>
+                    </ul>
+                </div>
+                <div class="weakness">
+                    <h3 style="color: #38294d;">Weaknesses</h3>
+                    <ul>
+                        <li>Wave Optics</li>
+                        <li>Magnetism</li>
+                        <li>Alternating Current</li>
+                        <li>Thermodynamics</li>
+                        <li>Electromagnetic Induction</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Academic Review -->
+            <div class="academic-review">
+                <h3>Academic Review</h3>
+                <p>The student's performance has been consistent with notable strengths in core physics topics. However, improvement is needed in advanced wave optics and thermodynamics. Regular practice and revision are recommended.</p>
+                <p>Here is the generated Report Card: <a href="Report Card.pdf">Click Here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard_script.js"></script>
+</body>
+</html>
