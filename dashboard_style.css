@@ -10,7 +10,6 @@ body {
     display: flex;
     width: 100%;
 }
-/* Sidebar */
 .sidebar {
     width: 250px;
     background-color: #1f0e3a;
@@ -59,7 +58,6 @@ nav ul li:hover {
     background-color: #c73b2b;
     color: #ffd51d;
 }
-/* Main Content */
 .main-content {
     flex-grow: 1;
     font-size: 1.2rem;
@@ -68,7 +66,6 @@ nav ul li:hover {
     overflow: auto;
     color: white;
 }
-/* Dashboard Widgets */
 .dashboard-widgets {
     display: flex;
     gap: 15px;
@@ -84,7 +81,6 @@ nav ul li:hover {
     text-align: center;
     font-size: 18px;
 }
-/* Study Progress */
 .study-progress {
     background-color: white;
     color: black;
@@ -93,7 +89,6 @@ nav ul li:hover {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
-/* Strengths & Weaknesses */
 .strength-weakness {
     display: flex;
     gap: 20px;
