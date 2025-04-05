@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("dailyProgressChart").height = 300;
     document.getElementById("weeklyProgressChart").height = 300;
 
+    function signOut() {
+    console.log("User signed out");
+    window.location.href = "index.html"; 
     // Daily Progress Chart
     var dailyCtx = document.getElementById("dailyProgressChart").getContext("2d");
     new Chart(dailyCtx, {
@@ -21,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
             maintainAspectRatio: false
         }
     });
-
     // Weekly Progress Chart
     var weeklyCtx = document.getElementById("weeklyProgressChart").getContext("2d");
     new Chart(weeklyCtx, {
