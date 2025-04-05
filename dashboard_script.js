@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             maintainAspectRatio: false
         }
     });
+    
     // Weekly Progress Chart
     var weeklyCtx = document.getElementById("weeklyProgressChart").getContext("2d");
     new Chart(weeklyCtx, {
@@ -39,6 +40,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
- function signOut() {
-    console.log("User signed out");
-    window.location.href = "index.html"; 
